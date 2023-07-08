@@ -188,7 +188,7 @@ export default {
       setTimeout(() => {
         if (format.get("avatar")) {
           axios
-            .post("http://101.37.23.149:30021/api/user/uploadpic", format)
+            .post("http://localhost:3000/api/user/uploadpic", format)
             .then((data) => {
               if (data.message == "创建出错") {
                 console.log("创建出错");
